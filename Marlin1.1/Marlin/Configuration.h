@@ -614,7 +614,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.121, 80.121, 399.778, 478.49 }
-//JRRN: Calibrate Extruder Steps
+//JRRN: Calibrate Extruder Steps Default: 445
 
 /**
  * Default Max Feed Rate (mm/s)

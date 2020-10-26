@@ -1,9 +1,9 @@
 #
 # Marlin 3D Printer Firmware
-# Copyright (C) 2017 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+# Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
 #
 # Based on Sprinter and grbl.
-# Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
+# Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
 # Our automatic versioning scheme generates the following file
@@ -28,7 +28,6 @@ _Version.h
 #
 applet/
 *.DS_Store
-
 
 #
 # Misc
@@ -78,7 +77,6 @@ tags
 *.out
 *.app
 
-
 #
 # C
 #
@@ -120,7 +118,35 @@ tags
 .pio*
 .pioenvs
 .piolibdeps
-lib/readme.txt
+.clang_complete
+.gcc-flags.json
+/lib/
+
+# Workaround for Deviot+platformio quirks
+Marlin/lib
+Marlin/platformio.ini
+Marlin/*/platformio.ini
+Marlin/*/*/platformio.ini
+Marlin/*/*/*/platformio.ini
+Marlin/*/*/*/*/platformio.ini
+Marlin/.travis.yml
+Marlin/*/.travis.yml
+Marlin/*/*/.travis.yml
+Marlin/*/*/*/.travis.yml
+Marlin/*/*/*/*/.travis.yml
+Marlin/.gitignore
+Marlin/*/.gitignore
+Marlin/*/*/.gitignore
+Marlin/*/*/*/.gitignore
+Marlin/*/*/*/*/.gitignore
+Marlin/readme.txt
+Marlin/*/readme.txt
+Marlin/*/*/readme.txt
+Marlin/*/*/*/readme.txt
+Marlin/*/*/*/*/readme.txt
+
+# Secure Credentials
+Configuration_Secure.h
 
 #Visual Studio
 *.sln
@@ -142,8 +168,18 @@ vc-fileutils.settings
 
 #cmake
 CMakeLists.txt
-Marlin/CMakeLists.txt
+src/CMakeLists.txt
 CMakeListsPrivate.txt
 
 #CLion
 cmake-build-*
+
+#Eclipse
+.project
+.cproject
+.pydevproject
+.settings
+.classpath
+
+#Python
+__pycache__
