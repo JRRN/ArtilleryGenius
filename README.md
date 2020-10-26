@@ -8,3 +8,6 @@ MODS:
 
 - Marlin 1.1:
     - #define TEMP_SENSOR_0 5
+    - Calibration Extruder set new Value to 478.49
+
+- Marlin 2.0. bugfix    
