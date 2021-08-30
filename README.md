@@ -22,6 +22,10 @@ MODS:
     - #define DEFAULT_bedKi 2.66
     - #define DEFAULT_bedKd 143.82
 
+- Marlin 2.0.7.2
+- Marlin Molise MOD 2.0.8 + BLTOUCH
+- Marlin Molise MOD 2.0.9.1 + BLTOUCH + TFT MOD 5.2
+
 GCODE COMMANDS:
 
 - AutoTune PID BED: M303 E-1 S60 C8
